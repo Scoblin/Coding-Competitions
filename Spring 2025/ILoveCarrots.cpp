@@ -58,7 +58,7 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     int N; cin >> N;
-    if(N==2 || N==5){ cout << "Impossible"; return 0; }
+    //if(N==2 || N==5){ cout << "Impossible"; return 0; }
     vector<int> rows, cols;
     if(!coinChange(N, rows) || !coinChange(N, cols)){
         cout << "Impossible";
