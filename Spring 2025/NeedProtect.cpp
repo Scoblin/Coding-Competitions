@@ -5,12 +5,11 @@
 #include <algorithm>
 using namespace std;
 
-const int MAXN = 50005;
-int N, M;
-vector<pair<int, int>> animals;
-vector<int> locationDefenders(MAXN, 0);
-
 int main() {
+    const int MAXN = 50005;
+    int N, M;
+    vector<pair<int, int>> animals;
+    vector<int> locationDefenders(MAXN, 0);
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cin >> N>>M;
@@ -26,7 +25,6 @@ int main() {
     for(int i=1; i<=N; ++i){
         if(locationDefenders[i]<2)
             needs[i] = 2 - locationDefenders[i];
-    
     }
     int alliesNeeded = 0;
     vector<int> defenderCount(N+1,0);
