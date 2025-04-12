@@ -21,7 +21,7 @@ int main() {
         locationDefenders[a]++;
         locationDefenders[b]++;
     }
-    
+    //testing
     vector<int> needs(N+1,0);
     for(int i=1; i<=N; ++i){
         if(locationDefenders[i]<2)
